@@ -28,7 +28,9 @@ class UuidServiceProvider extends ServiceProvider {
      */
     public function register()
     {
-        //
+        $this->app['uuid'] = $this->app->share(function ($app) {
+            return new Uuid;
+        });
     }
 
     /**
@@ -38,7 +40,7 @@ class UuidServiceProvider extends ServiceProvider {
      */
     public function provides()
     {
-        return array();
+        return array('uuid');
     }
 
 }
