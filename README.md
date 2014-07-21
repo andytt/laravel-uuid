@@ -1,7 +1,15 @@
 ## Installation
 
 1. Add `'Andytt\Uuid\UuidServiceProvider'` to `providers` array in `app/config/app.php`.
-2. Add Alias to `aliases` array in `app/config/app.php`. For example, `'Uuid' => 'Andytt\Uuid\Facades\Uuid'`.
+2. Add Alias to `aliases` array in `app/config/app.php`.
+ * For example, `'Uuid' => 'Andytt\Uuid\Facades\Uuid'`.
+
+## Usage
+
+```
+Uuid::get(4); // Get version 4
+Uuid::get(5, [namespace], [name]); // Get version 5
+```
 
 ## License
 
