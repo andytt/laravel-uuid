@@ -6,6 +6,8 @@
 
 ## Usage
 
+[API wiki](https://github.com/andytt/laravel-uuid/wiki/API)
+
 ```
 Uuid::get(4); // Get version 4
 Uuid::get(5, [namespace], [name]); // Get version 5
