@@ -84,5 +84,21 @@ class Uuid
 
         return $version;
     }
+
+    /**
+     * Check uuid version
+     *
+     * @param RUuid|string $uuid
+     * @param integer $version
+     * @return boolean
+     */
+    public function checkVersion($uuid = '', $version = 1)
+    {
+        if (!RUuid::isValid($uuid)) {
+            return false;
+        }
+
+        return (RUuid::fromString($uuid)->getVersion() === $version) ? true : false;
+    }
 }
 
