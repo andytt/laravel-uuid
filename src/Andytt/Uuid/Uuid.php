@@ -87,7 +87,7 @@ class Uuid
      * Get uuid version.
      *
      * @param RUuid|string $uuid
-     * @return integer|boolean
+     * @return integer|boolean Return version if success, otherwise false
      */
     public function getVersion($uuid = '')
     {
