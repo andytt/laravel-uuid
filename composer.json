@@ -1,6 +1,6 @@
 {
     "name": "andytt/uuid",
-    "description": "",
+    "description": "Laravel uuid using ramsey/uuid.",
     "authors": [
         {
             "name": "andytt",
