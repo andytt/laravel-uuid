@@ -65,6 +65,25 @@ class Uuid
     }
 
     /**
+     * Create RUuid from string or bytes.
+     *
+     * @param string $uuid
+     * @return RUuid|boolean RUuid if success, otherwise false
+     */
+    public function create($uuid)
+    {
+        if (is_string($uuid) && 16 === strlen($uuid)) {
+            return RUuid::fromBytes($uuid);
+        }
+
+        if (!RUuid::isValid($uuid)) {
+            return false;
+        }
+
+        return RUuid::fromString($uuid);
+    }
+
+    /**
      * Get uuid version.
      *
      * @param RUuid|string $uuid
