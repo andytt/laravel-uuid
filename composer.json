@@ -1,6 +1,9 @@
 {
     "name": "andytt/uuid",
     "description": "Laravel uuid using ramsey/uuid.",
+    "homepage": "https://github.com/andytt/laravel-uuid",
+    "license": "MIT",
+    "keywords": ["laravel", "uuid"],
     "authors": [
         {
             "name": "andytt",
